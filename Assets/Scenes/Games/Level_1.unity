@@ -560,8 +560,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbdeaf124807f24a928f4c07902a5d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animTrigger: {fileID: 0}
+  animTrigger: {fileID: 823030825}
   transformPanel: {fileID: 2113243256}
+  btnTrigger: {fileID: 823030822}
 --- !u!1 &1444988679
 GameObject:
   m_ObjectHideFlags: 0

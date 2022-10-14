@@ -8,6 +8,9 @@ public class GameResult : MonoBehaviour
 {
     public LevelDataList_SO levelData;
     public Text textResult;
+    public GameObject btnNext;
+
+    private int curLevel;
 
     private void OnEnable()
     {
@@ -23,12 +26,28 @@ public class GameResult : MonoBehaviour
     {
         if (!from.Contains("Level_")) return;
 
-        int levelID = int.Parse(from.Split('_')[1]);
-        LevelDetail levelDetail = levelData.GetLevelDetail(levelID);
+        curLevel = int.Parse(from.Split('_')[1]);
+        LevelDetail levelDetail = levelData.GetLevelDetail(curLevel);
 
-        textResult.GetComponent<RectTransform>().sizeDelta = new Vector3(levelDetail.levelWin.Length * textResult.fontSize, 50);
+        if (curLevel >= levelData.levelDetailList.Count)
+        {
+            btnNext.SetActive(false);
+        }
+        else
+        {
+            btnNext.SetActive(true);
+        }
+
+        textResult.GetComponent<RectTransform>().sizeDelta = new Vector3(50, levelDetail.levelWin.Length * textResult.fontSize);
         textResult.text = levelDetail.levelWin;
         textResult.GetComponent<RectTransform>().DOScale(new Vector3(1, 1, 1), 3);
         textResult.DOFade(1, 3);
+    }
+
+    public void OnBtnNextClick()
+    {
+        if (curLevel >= levelData.levelDetailList.Count) return;
+
+        TransitionManager.Instance.Transition("Result", "Level_" + (curLevel + 1));
     }
 }

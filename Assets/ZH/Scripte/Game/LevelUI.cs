@@ -96,11 +96,9 @@ public class LevelUI : MonoBehaviour
 
     public void OnLevelBtnClick(GameObject sender)
     {
-        Debug.Log(sender.name);
         int index = int.Parse(sender.name.Split('_')[1]);
         int level = mCurPage * PAGA_ITEM_COUNT + index;
         TransitionManager.Instance.Transition("LevelScene", "Level_" + level);
-        Debug.Log("current select level: " + level);
     }
 
     public void OnPointerUp()
