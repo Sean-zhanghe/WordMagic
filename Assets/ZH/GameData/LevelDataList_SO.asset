@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7529b475007a1404e828fbdc3a354878, type: 3}
+  m_Name: LevelDataList_SO
+  m_EditorClassIdentifier: 
+  levelDetailList:
+  - levelID: 1
+    levelSprite: {fileID: 0}
+    levelTitle: "\u8BA9\u9752\u86D9\u8DF3\u51FA\u4E95\u53E3"
+    levelWin: "\u5916\u9762\u4E5F\u5FD2\u5927\u4E86"
+  - levelID: 2
+    levelSprite: {fileID: 0}
+    levelTitle: "\u8BA9\u5AE6\u5A25\u6210\u529F\u767B\u6708"
+    levelWin: "\u539F\u6765\u662F\u5AE6\u5A25\u722C\u6708"
+  - levelID: 3
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 4
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 5
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 6
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 7
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 8
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 9
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 10
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 11
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 12
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 13
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 14
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 15
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 16
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 17
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 18
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 19
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 20
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 21
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 22
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
+  - levelID: 23
+    levelSprite: {fileID: 0}
+    levelTitle: 
+    levelWin: 
