@@ -38,7 +38,12 @@ public class GameResult : MonoBehaviour
             btnNext.SetActive(true);
         }
 
-        textResult.GetComponent<RectTransform>().sizeDelta = new Vector3(50, levelDetail.levelWin.Length * textResult.fontSize);
+        textResult.GetComponent<RectTransform>().sizeDelta = new Vector3(50, levelDetail.levelWin.Length * (textResult.fontSize + 5));
+        
+        Debug.Log(levelDetail.levelWin.Length);
+        Debug.Log(textResult.fontSize);
+        Debug.Log(textResult.GetComponent<RectTransform>().sizeDelta);
+
         textResult.text = levelDetail.levelWin;
         textResult.GetComponent<RectTransform>().DOScale(new Vector3(1, 1, 1), 3);
         textResult.DOFade(1, 3);
