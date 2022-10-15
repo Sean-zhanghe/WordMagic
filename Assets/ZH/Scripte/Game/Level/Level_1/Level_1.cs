@@ -11,6 +11,7 @@ public class Level_1 : MonoBehaviour
     public Button btnTrigger;
 
     private Vector3 originPos;
+    private Vector3 offsetPos;
     private bool isDrag;
 
     private void OnEnable()
@@ -22,7 +23,7 @@ public class Level_1 : MonoBehaviour
     {
         if (isDrag)
         {
-            transformPanel.position = Input.mousePosition;
+            
         }
     }
 
@@ -33,7 +34,12 @@ public class Level_1 : MonoBehaviour
 
     public void OnBtnMoveDragBegin()
     {
-        isDrag = true;
+        offsetPos = transformPanel.position - Input.mousePosition;
+    }
+
+    public void OnBtnMoveDrag()
+    {
+        transformPanel.position = Input.mousePosition + offsetPos;
     }
 
     public void OnBtnMoveDragExit()
