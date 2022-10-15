@@ -23,8 +23,8 @@ MonoBehaviour:
     levelWin: "\u539F\u6765\u662F\u5AE6\u5A25\u722C\u6708"
   - levelID: 3
     levelSprite: {fileID: 0}
-    levelTitle: 
-    levelWin: 
+    levelTitle: "\u505C\u4E0B\u6765\u8EB2\u8EB2\u96E8\u5427"
+    levelWin: "\u4EAD\u4E2D\u5C0F\u61A9\u7B49\u96E8\u505C"
   - levelID: 4
     levelSprite: {fileID: 0}
     levelTitle: 
