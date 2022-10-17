@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 43353007}
   - component: {fileID: 43353009}
   - component: {fileID: 43353008}
+  - component: {fileID: 43353010}
+  - component: {fileID: 43353011}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -195,6 +197,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43353006}
   m_CullTransparentMesh: 0
+--- !u!95 &43353010
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43353006}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67a4160407dd81d40bdb5676d18351e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &43353011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43353006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e90970a6627b34794991e199f593c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &528915320
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 528915321}
   - component: {fileID: 528915322}
+  - component: {fileID: 528915324}
   m_Layer: 5
   m_Name: Point2Area
   m_TagString: Untagged
@@ -257,6 +291,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 139.80194, y: 64.97034}
   m_EdgeRadius: 0
+--- !u!222 &528915324
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528915320}
+  m_CullTransparentMesh: 0
 --- !u!1 &1194780565
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364830110}
   - component: {fileID: 1364830112}
+  - component: {fileID: 1364830113}
   m_Layer: 5
   m_Name: Point1Area
   m_TagString: Untagged
@@ -473,6 +516,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 99.9429, y: 60.121826}
   m_EdgeRadius: 0
+--- !u!222 &1364830113
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364830109}
+  m_CullTransparentMesh: 0
 --- !u!1 &1437180436
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,10 +716,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec27952c64d3bec419db49a5de981f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animTrigger: {fileID: 43353010}
   btnPoint1: {fileID: 1986896019}
   btnPoint2: {fileID: 1437180437}
   pointTarget1: {fileID: 1194780566}
   pointTarget2: {fileID: 1853249908}
+  pointArea1: {fileID: 1364830110}
+  pointArea2: {fileID: 528915321}
 --- !u!61 &1437180443
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -679,7 +733,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0012817383, y: 0.0006866455}
@@ -710,7 +764,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1017,10 +1071,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec27952c64d3bec419db49a5de981f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animTrigger: {fileID: 43353010}
   btnPoint1: {fileID: 1986896019}
   btnPoint2: {fileID: 1437180437}
   pointTarget1: {fileID: 1194780566}
   pointTarget2: {fileID: 1853249908}
+  pointArea1: {fileID: 1364830110}
+  pointArea2: {fileID: 528915321}
 --- !u!61 &1986896025
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1031,7 +1088,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.37997437, y: -0.07601929}
@@ -1062,7 +1119,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
