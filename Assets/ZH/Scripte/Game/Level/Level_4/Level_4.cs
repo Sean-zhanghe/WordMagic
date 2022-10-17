@@ -59,8 +59,8 @@ public class Level_4 : MonoBehaviour
 
     public void OnBtnPointDrag()
     {
-        if (this.name == "BtnPoint1" && !isBackPos1) return;
-        if (this.name == "BtnPoint2" && !isBackPos2) return;
+        if (this.name == "BtnPoint1" && (!isBackPos1 || transform.position == pointArea1.position)) return;
+        if (this.name == "BtnPoint2" && !isBackPos2 || transform.position == pointArea2.position) return;
 
         transform.position = Input.mousePosition + offsetPos;
     }
