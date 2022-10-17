@@ -11,6 +11,7 @@ public class LevelDataList_SO : ScriptableObject
     public LevelDetail GetLevelDetail(int levelID)
     {
         return levelDetailList.Find(i => i.levelID == levelID);
+        
     }
 }
 
