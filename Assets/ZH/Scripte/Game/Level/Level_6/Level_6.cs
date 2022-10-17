@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Level_6 : MonoBehaviour
 {
     public List<Transform> flyList = new List<Transform>();
+    public Transform imgGods;
 
     public Vector3 offset;
     public float frequency;
@@ -112,6 +113,11 @@ public class Level_6 : MonoBehaviour
 
     private void CheckGameWin()
     {
+        for (int i = 0; i < imgGods.childCount; i++)
+        {
+            if (imgGods.GetChild(i).GetComponent<Image>().color.a != 1) return;
+        }
 
+        // 所有神字都已出现
     }
 }

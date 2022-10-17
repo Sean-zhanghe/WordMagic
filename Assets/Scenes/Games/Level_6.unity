@@ -849,6 +849,7 @@ MonoBehaviour:
   - {fileID: 64748073}
   - {fileID: 1107746191}
   - {fileID: 1380054260}
+  imgGods: {fileID: 1996041593}
   offset: {x: 80, y: 50, z: 0}
   frequency: 3.5
   playAwake: 1
