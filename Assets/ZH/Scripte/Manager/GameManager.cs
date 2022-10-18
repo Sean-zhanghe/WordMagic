@@ -39,6 +39,13 @@ public class GameManager : MonoBehaviour
 
     public void OnGameResultTriggerEvent(int levelID, bool isWin)
     {
-        TransitionManager.Instance.Transition("Level_" + levelID, "Result");
+        if (isWin)
+        {
+            TransitionManager.Instance.Transition("Level_" + levelID, "Result");
+        }
+        else
+        {
+            TransitionManager.Instance.Transition("Level_" + levelID, "Level_" + levelID);
+        }
     }
 }
