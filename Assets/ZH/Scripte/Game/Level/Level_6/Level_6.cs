@@ -8,6 +8,7 @@ public class Level_6 : MonoBehaviour
 {
     public List<Transform> flyList = new List<Transform>();
     public Transform imgGods;
+    public Animator animTrigger;
 
     public Vector3 offset;
     public float frequency;
@@ -92,7 +93,10 @@ public class Level_6 : MonoBehaviour
 
         var imgGod = GameObject.Find("ImgGod_" + curIndex);
         imgGod?.GetComponent<Transform>().DOScale(new Vector3(1, 1, 1), 0.5F);
-        imgGod?.GetComponent<Image>().DOFade(1, 0.5F).OnComplete(() => isEnterTrigger = false);
+        imgGod?.GetComponent<Image>().DOFade(1, 0.5F).OnComplete(() => {
+            isEnterTrigger = false;
+            this.CheckGameWin();
+        });
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -119,5 +123,6 @@ public class Level_6 : MonoBehaviour
         }
 
         // 所有神字都已出现
+        animTrigger.SetTrigger("Level6Trigger");
     }
 }

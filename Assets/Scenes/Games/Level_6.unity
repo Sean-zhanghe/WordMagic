@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -849,7 +849,8 @@ MonoBehaviour:
   - {fileID: 64748073}
   - {fileID: 1107746191}
   - {fileID: 1380054260}
-  imgGods: {fileID: 1996041593}
+  imgGods: {fileID: 1996041594}
+  animTrigger: {fileID: 1046277251}
   offset: {x: 80, y: 50, z: 0}
   frequency: 3.5
   playAwake: 1
@@ -938,7 +939,6 @@ GameObject:
   - component: {fileID: 911193299}
   - component: {fileID: 911193300}
   - component: {fileID: 911193302}
-  - component: {fileID: 911193301}
   m_Layer: 5
   m_Name: GodArea_1
   m_TagString: Untagged
@@ -991,35 +991,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 100.002625, y: 99.674194}
   m_EdgeRadius: 0
---- !u!114 &911193301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911193298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &911193302
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1188,6 +1159,7 @@ GameObject:
   - component: {fileID: 1046277250}
   - component: {fileID: 1046277249}
   - component: {fileID: 1046277251}
+  - component: {fileID: 1046277252}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1270,6 +1242,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1046277252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046277247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 333be4ea057464316824adc4534e101b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1107746190
 GameObject:
   m_ObjectHideFlags: 0
