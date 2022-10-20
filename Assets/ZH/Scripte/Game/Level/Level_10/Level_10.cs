@@ -49,9 +49,6 @@ public class Level_10 : MonoBehaviour
         isDrag = false;
         Vector3 dragExitPos = transform.position;
         transform.DOMove(originPos, 0.5f).OnComplete(() => {
-            Debug.Log(isEnterUp);
-            Debug.Log("drag exit pos:  " + dragExitPos.y);
-            Debug.Log("origin pos:  " + originPos.y);
             if (isEnterUp && dragExitPos.y < originPos.y)
             {
                 isFinish = true;
