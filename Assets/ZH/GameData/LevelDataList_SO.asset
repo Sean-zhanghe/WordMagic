@@ -61,3 +61,11 @@ MonoBehaviour:
     levelSprite: {fileID: 0}
     levelTitle: "\u79FB\u9664\u4E24\u5EA7\u5927\u5C71"
     levelWin: "\u8FD9\u662F\u6211\u7528\u5934\u6362\u6765\u7684"
+  - levelID: 13
+    levelSprite: {fileID: 0}
+    levelTitle: "\u4FDD\u62A4\u519C\u4F5C\u7269"
+    levelWin: "\u539F\u6765\u6211\u662F\u4E09\u53EA\u9E1F"
+  - levelID: 13
+    levelSprite: {fileID: 0}
+    levelTitle: "\u4FDD\u62A4\u519C\u4F5C\u7269"
+    levelWin: "\u539F\u6765\u6211\u662F\u4E09\u53EA\u9E1F"
